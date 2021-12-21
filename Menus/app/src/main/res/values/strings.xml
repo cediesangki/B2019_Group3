@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Menus</string>
+    <string name="settings">Setting</string>
+    <string name="help">Help</string>
+</resources>
