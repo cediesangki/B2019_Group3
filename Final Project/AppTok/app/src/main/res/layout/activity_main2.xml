@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/clouds">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="414dp"
+        android:layout_height="47dp"
+        android:background="#867C4DFF"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/bungee"
+        android:text="How many minutes to screen turn off?"
+        android:textColor="#EEFF41"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="408dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="#EEFF41"
+            android:textColorHint="#EEFF41"
+            android:textSize="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#EEFF41"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="#EEFF41"
+            android:textColorHint="#EEFF41"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:backgroundTint="#867C4DFF"
+        android:textColor="#EEFF41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:text="start" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="196dp"
+        android:text="00:00"
+        android:textColor="#EEFF41"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/enableBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#867C4DFF"
+        android:textColor="#EEFF41"
+        android:layout_marginBottom="100dp"
+        android:text="Allow" />
+
+    <Button
+        android:id="@+id/disableBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#867C4DFF"
+        android:text="PERMISSION CANCEL"
+        android:textColor="#EEFF41" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:layout_marginBottom="35dp"
+        android:onClick="nextBtn"
+        android:backgroundTint="#867C4DFF"
+        android:text="Choose Music"
+        android:textColor="#EEFF41" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/sticker" />
+
+
+</RelativeLayout>
